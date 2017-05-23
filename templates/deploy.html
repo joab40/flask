@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python Flask Bucket List App</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/signup.css" rel="stylesheet">
+    
+  </head>
+ 
+  <body>
+ 
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="/">Home</a></li>
+            <li role="presentation" class="active"><a href="#">Deploy</a></li>
+            <li role="presentation" ><a href="#">Info</a></li>
+            <li role="presentation" ><a href="showFAQ">FAQ</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">BiP Deployment App</h3>
+      </div>
+ 
+      <div class="jumbotron">
+        <h1>Install</h1>
+        <form class="form-signin">
+        <label for="inputName" class="sr-only">BIPID</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Bip Id" required autofocus>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Miljo [ saturnus | uranus | prod]" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Leg [ All | S | B | H ]" required>
+          <select id="miljo" class="form-control"  name="miljo">
+            <option selected disabled>Choose Miljo here</option>
+            <option value="saturnus">Saturnus</option>
+            <option value="uranus">Uranus</option>
+            <option value="prod">Prod</option>
+          </select>
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Deploy</button>
+      </form>
+      </div>
+ 
+       
+ 
+      <footer class="footer">
+        <p>&copy; FK-IT Inovation 2017</p>
+      </footer>
+ 
+    </div>
+  </body>
+</html>
